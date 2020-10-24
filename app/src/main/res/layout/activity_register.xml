@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/putih"
+    android:orientation="horizontal"
+    tools:context=".LoginUser.RegisterActivity">
+
+    <ImageView
+        android:background="@color/putih"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:src="@drawable/logozo" />
+
+    <LinearLayout
+        android:id="@+id/linier_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="199dp"
+        android:padding="5dp"
+        android:layout_below="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linier_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/linier_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:passwordToggleEnabled="true">
+
+    <EditText
+        android:id="@+id/password_edt"
+        app:passwordToggleEnabled="true"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"/>
+
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/register_btn"
+        android:layout_marginTop="320dp"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/punya_akun"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun? Masuk.."
+        android:layout_marginTop="380dp"/>
+
+
+
+</RelativeLayout>

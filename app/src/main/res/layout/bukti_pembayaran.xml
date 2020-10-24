@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:gravity="center"
+                    android:textColor="@color/hitam"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Konfirmasi Pembayaran"/>
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:textColor="@color/hitam"
+                    android:padding="5dp"
+                    android:layout_below="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pemesan:"/>
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="right"
+                    android:layout_below="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_nama_pemesan"
+                    android:text="Deddy Supariandi"/>
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:textColor="@color/hitam"
+                    android:padding="5dp"
+                    android:layout_below="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="N0 HP:"/>
+
+                <TextView
+                    android:id="@+id/TV_nomor"
+                    android:layout_marginRight="20sp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="right"
+                    android:layout_below="@+id/tv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="082140273038"/>
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:textColor="@color/hitam"
+                    android:padding="5dp"
+                    android:layout_below="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rombongan Dari:"/>
+
+                <TextView
+                    android:id="@+id/TV_rombong"
+                    android:layout_marginRight="20sp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="right"
+                    android:layout_below="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yogyakarta"/>
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:textColor="@color/hitam"
+                    android:padding="5dp"
+                    android:layout_below="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Jumlah Pengunjung:"/>
+
+                <TextView
+                    android:id="@+id/TV_jml_pengunjung"
+                    android:layout_marginRight="20sp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="right"
+                    android:layout_below="@+id/tv4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10"/>
+
+
+                <View
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/garis"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_below="@+id/tv5" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:textColor="@color/hitam"
+                    android:padding="5dp"
+                    android:layout_below="@+id/garis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Jumlah Yang Harus Dibayar:"/>
+
+                <TextView
+                    android:id="@+id/TV_total"
+                    android:layout_marginRight="20sp"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:gravity="right"
+                    android:layout_below="@+id/garis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2000000"/>
+
+                <Button
+                    android:id="@+id/bayar"
+                    android:layout_marginTop="50dp"
+                    android:padding="0dp"
+                    android:textColor="@color/putih"
+                    android:background="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:text="Bayar"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv7"/>
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

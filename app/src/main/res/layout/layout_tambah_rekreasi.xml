@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <!--EditText Input text Judul Postingan-->
+        <EditText
+            android:id="@+id/tv_judulRekreasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Judul Rekreasi"
+            android:singleLine="true"
+            android:padding="10dp" />
+
+        <!-- Image View untuk gmabra postingan-->
+        <ImageView
+            android:id="@+id/tv_imageInteraksi"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="200dp"/>
+
+        <!--EditText Input text Judul Postingan-->
+        <EditText
+            android:id="@+id/tv_diskripsi_Rekreasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Isi Rekreasi"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minHeight="120dp"
+            android:gravity="start"
+            android:padding="10dp" />
+
+        <!--Button publish Postingan ke Firebase-->
+        <Button
+            android:id="@+id/btn_upload_Rekreasi"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:text="Upload"
+            android:textColor="#fff"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

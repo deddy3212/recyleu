@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/we1"
+        android:padding="14sp"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/hitam"
+        android:text="Tentang kami"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/we2"
+        android:layout_below="@+id/we1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/we4"
+        android:textColor="@color/hitam"
+        android:padding="10dp"
+        android:layout_below="@+id/we1"
+        android:text="Visi Misi Perusahaan"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/hitam"
+        android:id="@+id/perusahaan"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:padding="1dp"
+        android:text="Melestarikan tumbuh-tumbuhan dan satwa sesuai dengan
+alam habitatnya, sehingga bisa bermanfaat bagi alam dan kehidupan manusia.
+"
+        android:layout_below="@+id/we4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/hitam"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="1dp"
+        android:layout_below="@+id/perusahaan"
+        android:text="Tempat pengembangan dan pelestarian jenis-jenis tumbuhan.
+Sebagai paru-paru kota dan cadangan air resapan di kota Yogyakarta.
+Sebagai lembaga konservasi yang mampu mensejahterakan satwa dengan memelihara dan merawat satwa sesuai habitatnya.
+Mengembangbiakan tumbuhan dan menangkarkan satwa dengan menjaga kemurnian genetic dan keanekaragaman jenis tumbuhan dan satwa.
+Pusat penelitian satwa yang mampu memberikan informasi mengenai jenis satwa, habitat satwa, pakan, cara reproduksi dan perawatan satwa guna menunjang pelestarian satwa.
+Sebagai sarana pendidikan yang mampu memberikan informasi tentang satwa sehingga menambah pengetahuan akan manfaat pelestarian satwa di lembaga konservasi.
+Untuk penyadaran kepada masyarakat untuk mencintai dan melestarikan jenis tumbuhan dan satwa dari bahaya kepunahan.
+Tempat rekreasi berwawasan lingkungan agar lebih dirasakan manfaat atas keseimbangan dan kemanfaatan ekosistem yang ada.
+Mengembangkan tempat rekreasi yang kreatif, menarik dan edukatif.
+Melakukan promosi untuk memperkenalkan, meningkatkan dan menjaga kunjungan."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

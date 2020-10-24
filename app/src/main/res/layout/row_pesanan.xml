@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/putih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/putih"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="@color/putih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:background="@color/putih"
+                    android:id="@+id/namapemesan"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hitam"
+                    android:text="Deddy Supariandi" />
+
+                <TextView
+                    android:layout_below="@+id/namapemesan"
+                    android:id="@+id/notlp"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hitam"
+                    android:text="No Tlp" />
+                <TextView
+                    android:layout_below="@+id/notlp"
+                    android:id="@+id/emailnya"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hitam"
+                    android:text="Email" />
+                <TextView
+                    android:layout_below="@+id/emailnya"
+                    android:id="@+id/jumlahtotalpengunjung"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hitam"
+                    android:text="Jumlah Total Pengunjung" />
+                <TextView
+                    android:layout_below="@+id/jumlahtotalpengunjung"
+                    android:id="@+id/jumlahtotalbayar"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/hitam"
+                    android:text="Jumlah Total Bayar" />
+                <TextView
+                    android:padding="5dp"
+                    android:layout_below="@+id/jumlahtotalbayar"
+                    android:textColor="@color/hitam"
+                    android:id="@+id/pTimeTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="33 min" />
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_below="@+id/pTimeTV"
+                    android:textColor="@color/hitam"
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status" />
+
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="10dp"
+                    android:layout_below="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <Button
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/cetakpdf"
+                        android:padding="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/putih"
+                        android:text="Cetak PDF" />
+
+                    <Button
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="140dp"
+                        android:id="@+id/batal_konfirm"
+                        android:padding="1dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/putih"
+                        android:text="Konfirmasi" />
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/garis2"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_below="@+id/cetakpdf" />
+
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

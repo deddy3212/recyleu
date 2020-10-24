@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.recyle">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginUser.LoginUser_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".LoginUser.ProfilUsers" />
+        <activity android:name=".LoginUser.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+        <activity android:name=".Admin.LihatAdmin" />
+        <activity android:name=".Admin.TambahAdmin" />
+        <activity android:name=".PesanTiket.Pesanan" />
+        <activity android:name=".PesanTiket.CalenderActivity"/>
+        <activity android:name=".Admin.AdminActivity" />
+        <activity android:name=".Admin.Dashboard_Admin" />
+        <activity android:name=".Admin.Admin_tambah_postingan" />
+        <activity android:name=".MenuTerkait.KontakKami" />
+        <activity android:name=".TambahData.TambahDataFasilitas" />
+        <activity android:name=".MenuTerkait.Fasilitasnya" />
+        <activity android:name=".MenuTerkait.Interaksinya" />
+        <activity android:name=".MenuTerkait.Rekreasinya" />
+        <activity android:name=".MenuTerkait.Konservasinya" />
+        <activity android:name=".MenuTerkait.Tentang"/>
+        <activity android:name=".TambahData.TambahInteraksi" />
+        <activity android:name=".TambahData.TambahDataRekreasi" />
+        <activity android:name=".TambahData.TambahDataKonservasi" />
+        <activity android:name=".Admin.TampilQr" />
+        <activity android:name=".Admin.Scan" />
+        <activity android:name=".KelolaUpdateDelete.Coba" />
+        <activity android:name=".KelolaUpdateDelete.DaftarDaftar" />
+        <activity android:name=".KelolaUpdateDelete.Kelola_Fasilitas"/>
+        <activity android:name=".MenuUser.Total" />
+        <activity android:name=".MenuUser.Menunggu"/>
+        <activity android:name=".MenuUser.Kadaluwarsa"/>
+        <activity android:name=".PesanTiket.Tambah_Pesanan" />
+        <activity android:name=".Laporan.Laporan"/>
+        <activity android:name=".PesanTiket.UploadBukti"/>
+        <activity android:name=".PesanTiket.Pembayaran"/>
+        <activity android:name=".Laporan.Pendapatan"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".PesanTiket.TiketTerbit"/>
+        <activity android:name=".Konfirmasi.Konfirmasilah"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".Konfirmasi.KonfirmasiBayaran" />
+        <activity android:name=".BuktiPembayaran.Bukti_bayar"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+    </application>
+
+</manifest>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesan Tiket!!"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:text="Tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btn_tanggal"
+                android:text="Pilih Tanggal"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:textStyle="normal"
+                android:textSize="20sp"
+                android:layout_marginLeft="140dp"
+                android:text="12/12/2019"
+                android:layout_marginTop="-37dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Pemesan:"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:id="@+id/ed_namapemesan"
+                android:layout_width="323dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:hint="Nama"
+                android:inputType="text"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="No Tlp:"/>
+
+            <EditText
+                android:id="@+id/ed_notlp"
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="No Tlp"
+                android:inputType="number"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Email:"/>
+
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="323dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Rombongan Dari:"/>
+
+            <EditText
+                android:id="@+id/ed_rombongan"
+                android:layout_width="323dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Dari"
+                android:inputType="text"
+                android:textSize="15dp" />
+
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Jumlah Penunjung:"/>
+
+            <EditText
+                android:id="@+id/ed_dewasa"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Anak-anak"
+                android:inputType="number"
+                android:textSize="15dp" />
+            <EditText
+                android:id="@+id/ed_anakanak"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Dewasa"
+                android:inputType="number"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/cek"
+                android:layout_marginLeft="220dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:text="Cek Total Bayar"/>
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Total Pengunjung:"/>
+            <TextView
+                android:id="@+id/tv_total_pengunjung"
+                android:textColor="@color/merah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="169dp"
+                android:layout_marginTop="-19dp"/>
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Bayar Dewasa: Rp"/>
+            <TextView
+                android:id="@+id/tv_total_bayar_dewasa"
+                android:textColor="@color/merah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="153dp"
+                android:layout_marginTop="-19dp"/>
+
+            <TextView
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Bayar Anak-anak: Rp"/>
+            <TextView
+                android:id="@+id/tv_total_bayar_anak"
+                android:textColor="@color/merah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="169dp"
+                android:layout_marginTop="-19dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="Total Semua Yang Harus Bayar: Rp"/>
+            <TextView
+                android:id="@+id/ed_totalbayar"
+                android:textColor="@color/merah"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="-19dp"
+                android:layout_height="wrap_content" />
+
+
+
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_marginLeft="220dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"/>
+
+            <TextView
+                android:id="@+id/hasil_bayar"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harga Tiket!"
+                android:textStyle="normal"/>
+
+
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Dewasa Rp50.000/per/orang"/>
+            <TextView
+                android:layout_marginLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Anak-anak Rp30.000 per/orang"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

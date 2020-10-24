@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Dashboard_Admin"
+    android:background="#fff">
+
+
+   <RelativeLayout
+       android:id="@+id/layout1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="180dp"
+           android:background="@color/colorPrimaryDark">
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:id="@+id/rela1"
+           android:layout_marginTop="528dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@color/putih">
+
+
+
+
+       </RelativeLayout>
+
+
+       <LinearLayout
+           android:id="@+id/layout2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="100dp">
+
+           <ImageView
+               android:id="@+id/avatarId"
+               android:padding="5dp"
+               android:background="@color/colorPrimaryDark"
+               android:src="@drawable/ic_person_black_24dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginLeft="20dp"
+               android:layout_width="120dp"
+               android:layout_height="120dp"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+               <TextView
+                   android:id="@+id/nameTV"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Admin"
+                   android:layout_marginStart="5dp"
+                   android:layout_marginLeft="5dp"
+                   android:textSize="25sp"
+                   android:textColor="#000"/>
+
+               <TextView
+                   android:id="@+id/emailTV"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Email"
+                   android:layout_marginStart="5dp"
+                   android:layout_marginLeft="5dp"
+                   android:textColor="#000"/>
+
+           </LinearLayout>
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/layout3"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="250dp">
+
+           <LinearLayout
+               android:padding="10dp"
+               android:layout_marginLeft="2dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:id="@+id/add_dataTV"
+                   android:layout_width="64dp"
+                   android:layout_height="61dp"
+                   android:background="@drawable/jeruk"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_add_circle_outline_black_24dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Add Data"
+                   android:textStyle="bold" />
+
+               <View
+                   android:layout_width="150dp"
+                   android:layout_height="1dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/lightgray" />
+
+
+
+
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:padding="10dp"
+               android:layout_marginLeft="2dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:id="@+id/scene"
+                   android:layout_width="64dp"
+                   android:layout_height="61dp"
+                   android:background="@drawable/cicleaneh"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_camera_alt_black_24dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Scan E-Tiket"
+                   android:textStyle="bold" />
+
+               <View
+                   android:layout_width="150dp"
+                   android:layout_height="1dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/lightgray" />
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:id="@+id/layout4"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="390dp">
+
+           <LinearLayout
+               android:padding="10dp"
+               android:layout_marginLeft="2dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:id="@+id/tambhadminTV"
+                   android:layout_width="64dp"
+                   android:layout_height="61dp"
+                   android:background="@drawable/circlebackgroundblue"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_person_add_black_24dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Add Admin"
+                   android:textStyle="bold" />
+
+               <View
+                   android:layout_width="150dp"
+                   android:layout_height="1dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/lightgray" />
+
+
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:id="@+id/ScaneCamera"
+               android:padding="10dp"
+               android:layout_marginLeft="2dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical">
+
+
+               <ImageView
+                   android:id="@+id/kelola"
+                   android:layout_width="64dp"
+                   android:layout_height="61dp"
+                   android:background="@drawable/circlered"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_delete_black_24dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Kelola Informasi"
+                   android:textStyle="bold" />
+
+               <View
+                   android:layout_width="150dp"
+                   android:layout_height="1dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/lightgray" />
+
+
+
+           </LinearLayout>
+
+
+
+
+
+       </LinearLayout>
+
+
+
+
+       <RelativeLayout
+           android:id="@+id/rela2"
+           android:layout_below="@+id/rela1"
+           android:layout_width="match_parent"
+           android:layout_height="130dp">
+
+           <LinearLayout
+               android:id="@+id/layout8"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="250dp"/>
+
+           <LinearLayout
+               android:padding="10dp"
+               android:layout_marginLeft="2dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:id="@+id/laporan"
+                   android:layout_width="64dp"
+                   android:layout_height="61dp"
+                   android:background="@drawable/circlebackgroundpurple"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_library_books_black_24dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Laporan"
+                   android:textStyle="bold" />
+
+               <View
+                   android:layout_width="150dp"
+                   android:layout_height="1dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/lightgray" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="190dp"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="10dp">
+
+               <ImageView
+                   android:id="@+id/teslah"
+                   android:layout_width="64dp"
+                   android:layout_height="61dp"
+                   android:background="@drawable/magenta"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_check_box_black_24dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Konfirmasi Pesanan"
+                   android:textStyle="bold" />
+
+               <View
+                   android:layout_width="150dp"
+                   android:layout_height="1dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/lightgray" />
+
+
+           </LinearLayout>
+
+
+
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_below="@+id/rela2"
+           android:layout_width="match_parent"
+           android:layout_height="140dp">
+
+           <LinearLayout
+               android:id="@+id/layout9"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="250dp"/>
+
+           <LinearLayout
+               android:padding="10dp"
+               android:layout_marginLeft="2dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <ImageView
+                   android:id="@+id/laporan_bukti"
+                   android:layout_width="64dp"
+                   android:layout_height="61dp"
+                   android:background="@drawable/biru"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_collections_bookmark_black_24dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Lihat BuktiPembayaran"
+                   android:textStyle="bold" />
+
+               <View
+                   android:layout_width="150dp"
+                   android:layout_height="1dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/lightgray" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="190dp"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:padding="10dp">
+
+               <ImageView
+                   android:id="@+id/teslah2"
+                   android:layout_width="64dp"
+                   android:layout_height="61dp"
+                   android:background="@drawable/lihat"
+                   android:padding="10dp"
+                   android:src="@drawable/ic_call_missed_outgoing_black_24dp" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:text="Keluar"
+                   android:textStyle="bold" />
+
+               <View
+                   android:layout_width="150dp"
+                   android:layout_height="1dp"
+                   android:layout_margin="10dp"
+                   android:background="@color/lightgray" />
+
+
+           </LinearLayout>
+
+
+
+       </RelativeLayout>
+
+
+   </RelativeLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>
+

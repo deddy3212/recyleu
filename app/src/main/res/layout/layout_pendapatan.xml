@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textColor="@color/hitam"
+        android:id="@+id/pd1"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Laporan Pembelian"/>
+
+
+
+    <View
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:background="@color/hitam"
+        android:layout_below="@+id/pd1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"/>
+
+
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/hitam"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/an"
+        android:layout_below="@+id/pd1"
+        android:text="Atas Nama:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/hitam"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/nohape"
+        android:layout_below="@+id/an"
+        android:text="No Hp:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/rd"
+        android:textSize="12sp"
+        android:textColor="@color/hitam"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/nohape"
+        android:text="Rombongan:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:textColor="@color/hitam"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/rd"
+        android:text="Status Pembelian:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginLeft="104dp"
+        android:id="@+id/sta"
+        android:text="Status"
+        android:layout_below="@+id/rd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginLeft="70dp"
+        android:id="@+id/deddysupa"
+        android:layout_below="@+id/pd1"
+        android:text="Deddy Supariandi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginLeft="44dp"
+        android:id="@+id/nomohp"
+        android:layout_below="@+id/an"
+        android:text="085233445566"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginLeft="74dp"
+        android:id="@+id/yogya"
+        android:layout_below="@+id/nohape"
+        android:text="Yogyakarta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="79dp"
+        android:id="@+id/vv1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:background="@color/hitam"
+        android:layout_below="@+id/pd1"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"/>
+
+
+    <TextView
+        android:layout_marginTop="79dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/pd2tanggal"
+        android:text="Tanggal"
+        android:textSize="12sp"
+        android:textColor="@color/hitam"
+        android:padding="5dp"
+        android:layout_below="@+id/pd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/tanggal_pendapatan"
+        android:text="12-12-2019"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:layout_below="@+id/vv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="79dp"
+        android:layout_marginLeft="110dp"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:text="Jumlah Pengunjung"
+        android:textColor="@color/hitam"
+        android:layout_below="@+id/pd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/jml_pengunjung_hari_ini"
+        android:layout_marginLeft="160dp"
+        android:padding="5dp"
+        android:textSize="12sp"
+        android:text="100"
+        android:layout_below="@+id/vv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_marginTop="79dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:textColor="@color/hitam"
+        android:layout_marginLeft="270dp"
+        android:layout_below="@+id/pd1"
+        android:text="Total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/ttl"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/hitam"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="12sp"
+        android:padding="5dp"
+        android:layout_marginLeft="270dp"
+        android:layout_below="@+id/vv2"
+        android:text="1000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/vv2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:background="@color/hitam"
+        android:layout_below="@+id/pd2tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"/>
+
+
+    <Button
+        android:layout_marginTop="0dp"
+        android:id="@+id/btn_ctk"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:layout_below="@id/ttl"
+        android:text="Cetak Pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="5dp"
+        android:background="@color/hitam"
+        android:layout_below="@+id/btn_ctk"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"/>
+
+
+
+</RelativeLayout>

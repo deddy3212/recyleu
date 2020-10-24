@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <TextView
+           android:textStyle="bold"
+           android:id="@+id/tv1"
+           android:padding="5dp"
+           android:textColor="@color/hitam"
+           android:textSize="20sp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Silahkan Transfer Pembayaran"/>
+
+        <ImageView
+            android:id="@+id/gmb1"
+            android:layout_width="88dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/tv1"
+            android:src="@drawable/logozo" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/hitam"
+            android:id="@+id/tv2"
+            android:layout_marginLeft="90dp"
+            android:layout_below="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank BRI "/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/hitam"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="90dp"
+            android:layout_below="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Rekening: 0009-99877-73838"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/hitam"
+            android:layout_marginTop="40sp"
+            android:layout_marginLeft="90dp"
+            android:layout_below="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atas Nama: PT.Buana Alam Tirta"/>
+        
+
+        <ImageView
+            android:id="@+id/gmb2"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logozo"
+            android:layout_width="88dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/gmb1" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/bca"
+            android:textColor="@color/hitam"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="115dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank BCA "/>
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/rek2"
+            android:layout_below="@+id/bca"
+            android:textColor="@color/hitam"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Rekening: 000-99999-08333 "/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/hitam"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="90dp"
+            android:layout_below="@+id/rek2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atas Nama: PT.Buana Alam Tirta"/>
+
+        <ImageView
+            android:id="@+id/gmb3"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logozo"
+            android:layout_width="88dp"
+            android:layout_height="69dp"
+            android:layout_below="@+id/gmb2"  />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/mandiri"
+            android:textColor="@color/hitam"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="195dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bank Mandiri "/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/rek3"
+            android:layout_below="@+id/mandiri"
+            android:textColor="@color/hitam"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Rekening: 000-99999-08333 "/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/hitam"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="90dp"
+            android:layout_below="@+id/rek3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atas Nama: PT.Buana Alam Tirta"/>
+
+        <TextView
+            android:id="@+id/tv6"
+            android:textColor="@color/hitam"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/gmb3"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Bukti Pembayaran Anda"/>
+
+
+        <LinearLayout
+            android:layout_below="@+id/tv6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:orientation="vertical">
+
+            <!--EditText Input text Judul Postingan-->
+            <EditText
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/edt_atas_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Atas Nama"
+                android:singleLine="true"
+                android:padding="10dp" />
+
+            <!-- Image View untuk gmabra postingan-->
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tv_imageBukti"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="200dp"/>
+
+            <!--Button publish Postingan ke Firebase-->
+            <Button
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btn_upload_bukti"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:text="Upload Bukti Pembayaran"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

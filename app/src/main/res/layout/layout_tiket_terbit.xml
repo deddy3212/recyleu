@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/ke1"
+                    android:textColor="@color/hitam"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pemesanan Anda Sudah Berhasil"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="1dp"
+                    android:layout_below="@+id/ke1"
+                    android:id="@+id/ke2"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terima Kasih, Anda Telah Sukses
+                     mengkonfirmasi dengan menggunakan metode pembayaran transfer bank. Pembayaran yang telah dikonfirmasi.
+                     Di mohon Untuk segera cek menu notifikasi di profil kamu untuk melihat tiket nya."/>
+
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

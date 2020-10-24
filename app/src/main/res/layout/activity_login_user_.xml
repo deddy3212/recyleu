@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/putih"
+    tools:context=".LoginUser.LoginUser_Activity">
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@color/putih"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="149dp"
+            android:src="@drawable/logozo" />
+
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linier_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="190dp"
+        android:padding="5dp"
+        android:layout_below="@+id/tv_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linier_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="5dp"
+        android:layout_below="@+id/linier_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/password_edt"
+                app:passwordToggleEnabled="true"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/linier_2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/loginBTN"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_below="@+id/google"
+        android:id="@+id/tidak_punya_akun"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Tidak punya akun? Daftar.."
+        android:textColor="@color/hitam"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/loginBTN"
+        android:id="@+id/lupa"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password?" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_below="@+id/lupa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/google"
+        >
+
+    </com.google.android.gms.common.SignInButton>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:background="@color/green"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <LinearLayout
+        android:id="@+id/lini_lihatTiket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/daftar_film"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+
+            <LinearLayout
+                android:layout_width="81dp"
+                android:layout_height="109dp"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:padding="10dp"
+                    android:id="@+id/image_view_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:background="@drawable/logozo" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_judulfilm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Tiket Kamu"
+                        android:textAlignment="center"
+                        android:textColor="@color/cardview_dark_background"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="1dp"
+                        android:background="@color/lightgray" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:text="Pemesan:"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_namapemesan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="155dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="0dp"
+                android:text="Pemesan"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="20dp"
+                android:text="No Tlp:"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_notlp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="136dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="20dp"
+                android:text="No Tlp"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="40dp"
+                android:text="Email:"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="132dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="40dp"
+                android:text="Email"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="60dp"
+                android:text="Rombongan dari:"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_rombongan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="200dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="60dp"
+                android:text="Rombongan"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="80dp"
+                android:text="Dewasa:"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_dewasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="80dp"
+                android:text="Dewasa"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="100dp"
+                android:text="Anak-anak:"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_anak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="165dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="100dp"
+                android:text="Anak"
+                android:textColor="@color/cardview_dark_background"
+                android:textStyle="normal" />
+
+                      <TextView
+                          android:layout_marginLeft="30dp"
+                android:layout_below="@+id/vv"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="145dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textColor="@color/cardview_dark_background"
+                android:text="Rincian"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Pengunjung:"
+                android:layout_marginTop="165dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="total"
+                android:id="@+id/tv_pengunjung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="165dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginLeft="129dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Bayar Dewasa:"
+                android:layout_marginTop="185dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_total_dewasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RP500.000"
+                android:layout_marginTop="185dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginLeft="145dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Bayar Anak-anak:"
+                android:layout_marginTop="205dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_total_anak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RP200.000"
+                android:layout_marginTop="205dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginLeft="158dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Bayar:"
+                android:layout_marginTop="235dp"
+                android:textColor="@color/hitam"
+                android:layout_marginLeft="100dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_total_bayar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="235dp"
+                android:text=" RP700.000"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="280dp"
+                android:text=" Status"
+                android:textColor="@color/colorPrimary" />
+
+
+
+            <ImageView
+                android:id="@+id/tv_Qr"
+                android:layout_width="263dp"
+                android:layout_height="183dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="285dp"
+                android:layout_marginRight="5dp"
+                android:text=" Status"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
