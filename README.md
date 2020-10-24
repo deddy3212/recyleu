@@ -1,5 +1,5 @@
 # zoologyca
 
-kamu harus mendaptaar ke layanan firebase untuk bisa menjalankannya.
+kamu harus mendaftar ke layanan firebase untuk bisa menjalankannya.
 
 Happy Coding
